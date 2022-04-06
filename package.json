@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server ./public"
+    "start": "http-server ./public",
+    "test": "cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "http-server": "^14.1.0"
+  },
+  "devDependencies": {
+    "cypress": "^9.5.3"
   }
 }
