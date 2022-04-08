@@ -15,4 +15,11 @@ describe('People List', () => {
       .find('h1')
       .should('contain.text', 'People List');
   });
+
+  it('should contain a list of people-list-items', () => {
+    cy.get('people-list')
+      .shadow()
+      .find('people-list-item')
+      .should('have.length', 10)
+  });
 });
